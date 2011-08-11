@@ -46,8 +46,8 @@ PRODUCT_COPY_FILES += \
 
 # gsm config xml file
 PRODUCT_COPY_FILES += \
-    vendor/htc/pyramid/proprietary/spn-conf.xml:system/etc/spn-conf.xml \
-    vendor/htc/pyramid/proprietary/voicemail-conf.xml:system/etc/voicemail-conf.xml
+    vendor/htc/pyramid/spn-conf.xml:system/etc/spn-conf.xml \
+    vendor/htc/pyramid/voicemail-conf.xml:system/etc/voicemail-conf.xml
 
 PRODUCT_PACKAGES += \
     lights.pyramid \
@@ -66,12 +66,12 @@ PRODUCT_COPY_FILES += \
 
 # Firmware
 PRODUCT_COPY_FILES += \
-    vendor/htc/pyramid/proprietary/BCM4329B1_OO2.002.023.0589.0632.hcd \
-    vendor/htc/pyramid/proprietary/fw_bcm4329.bin \
-    vendor/htc/pyramid/proprietary/fw_bcm4329_apasta.bin \
-    vendor/htc/pyramid/proprietary/leia_pfp_470.fw \
-    vendor/htc/pyramid/proprietary/leia_pm4_470.fw \
-    vendor/htc/pyramid/proprietary/vidc_1080p.fw
+    device/htc/pyramid/proprietary/BCM4329B1_OO2.002.023.0589.0632.hcd \
+    device/htc/pyramid/proprietary/fw_bcm4329.bin \
+    device/htc/pyramid/proprietary/fw_bcm4329_apasta.bin \
+    device/htc/pyramid/proprietary/leia_pfp_470.fw \
+    device/htc/pyramid/proprietary/leia_pm4_470.fw \
+    device/htc/pyramid/proprietary/vidc_1080p.fw
 
 PRODUCT_COPY_FILES += \
     device/htc/pyramid/vold.fstab:system/etc/vold.fstab
@@ -98,5 +98,5 @@ $(call inherit-product-if-exists, device/htc/pyramid/pyramid-vendor.mk)
 PRODUCT_NAME := htc_pyramid
 PRODUCT_DEVICE := pyramid
 PRODUCT_MODEL := HTC Sensation
+PRODUCT_BRAND := HTC
 PRODUCT_MANUFACTURER := HTC
-
